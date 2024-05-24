@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js program</title>
+    <style>
+        .button{
+            display: block;
+            height: 30px;
+            width: 120px;
+            border-radius:50px;
+            padding: 5px;
+            font-weight: bold;
+        }
+        #theme1{
+            color:aquamarine;
+            background-color:lightcoral;
+        }
+        #theme2{
+            color: rgb(211, 186, 181);
+            background-color:black;
+        }
+        #btn{
+            
+            display: flex;
+            width: 100%;
+            height: 60px;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+    <link rel="stylesheet" href="">
+
+    
+</head>
+
+<body>
+     <div id="btn">
+        <button id="theme1" onclick="theme1()" class="button">Theme light</button>
+        <button id="theme2" onclick="theme2()" class="button">Theme dark</button>
+        <button id="theme3" onclick="theme3()" class="button">Theme midddle</button>
+     </div>
+      <h1>welcome to my webpage</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi doloribus aut tempora modi possimus asperiores dolore vitae omnis fugit soluta voluptas maxime dignissimos aspernatur distinctio, neque fuga, facere illo deserunt. Quo atque veritatis quas numquam quia natus porro sit reprehenderit minima fugiat est, provident magni amet laborum reiciendis error harum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, quod obcaecati impedit quia expedita nostrum perferendis. Adipisci est incidunt provident doloremque odit dolores obcaecati possimus pariatur. Sint quia voluptatibus vel.</p><br>
+       <h3>try new theme</h3>
+ 
+       <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis numquam error sit quod atque accusamus explicabo quo temporibus quae rem. Maxime saepe, facere qui cupiditate voluptatibus nesciunt omnis laboriosam sapiente. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rem magnam voluptate quia eum laboriosam amet dolorem blanditiis, provident tempore veniam culpa porro eaque omnis obcaecati nobis deserunt, ex quis.</p>
+       </div>
+       <br>
+       <table border="2px solid red">
+        <tr>
+            <td>table</td>
+            <td>table</td>
+          </tr>
+          <tr>
+            <td>table</td>
+            <td>table</td>
+          </tr>
+       </table>
+       <br>
+       <img src="D:\practice\css\apple.jpg" alt="">
+       
+       <h2 class="h2">Theme site</h2>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos necessitatibus possimus eveniet perferendis eaque, placeat eius laborum dolorem commodi distinctio minima ducimus sint pariatur illum iste earum, nemo deleniti iusto?</p>
+
+
+</body>
+   <script>
+       function theme1(){
+       
+        var a=document.getElementsByTagName("link");
+    
+         a[0].href="theme1.css";
+        
+       }
+       function theme2(){
+        var a=document.getElementsByTagName("link");
+    
+         a[0].href="theme2.css";
+        
+       }
+       function theme3(){
+           var a=document.getElementsByTagName("link");
+    
+              a[0].href="theme3.css";
+       }
+   </script>
+</html>
